@@ -1,0 +1,15 @@
+$white: #fff;
+$green: green;
+#contact-page {
+    color: $white;
+    background: $green;
+};
+.address-page {
+    @extend #contact-page;
+}
+@function px2rem($pxsize) {
+    @return ($pxsize/16)+rem;
+}
+p.detail {
+    font-size: px2rem(20);
+}

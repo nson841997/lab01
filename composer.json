@@ -1,0 +1,16 @@
+{
+    "name": "vicoders/kit_html_css",
+    "description": "Vicoders HTML/CSS/JS Development Kit",
+    "authors": [
+        {
+            "name": "Hieupv",
+            "email": "hieupv@codersvn.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "vlucas/phpdotenv": "^2.5@dev",
+        "nikic/fast-route": "^2.0@dev",
+        "philo/laravel-blade": "dev-master"
+    }
+}

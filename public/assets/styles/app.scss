@@ -1,0 +1,37 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+// uncomment next-line to enable font-awesome
+// @import "~font-awesome/css/font-awesome.css";
+@import "./ui/font";
+@import "./ui/color";
+@import "./ui/button";
+@import "./pages/*";
+
+body {
+  color: $default_text_color;
+  background-color: $default_bg_color;
+  font-size: $font_size_normal;
+  font-family: $font_family;
+  header {
+    .bg-dark {
+      background-color: $main_header_bg_color !important;
+    }
+  }
+  .main {
+    min-height: calc(100vh - 260px);
+    .test-btn{
+      @extend %ui-btn;
+    }
+  }
+  footer {
+    padding-top: 20px;
+    background: $main_footer_bg_color;
+    color: #fff;
+    a {
+      color: #fff;
+      &:hover {
+        color: #2980b9;
+        text-decoration: none;
+      }
+    }
+  }
+}
